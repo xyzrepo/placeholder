@@ -1,29 +1,294 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script><script>tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
+<!DOCTYPE html>
+<html>
 
-                        wardi: { 500: "#F806CC", 200: "rgb(255,174,240,1)" },
-                        purple: { 100: "#ddd1fe", 200: "#bba3fd", 300: "#9974fc", 400: "#7746fb", 500: "#5518fa", 600: "#4413c8", 700: "#330e96", 800: "#220a64", 900: "#110532" },
-                        'deep-purple': { 500: "#2B1174", 200: "rgb(43,17,116,1)" },
-                        green: { 500: "#C1FF72", 200: "rgb(193,255,114,1)" },
-                        orange: { 500: "#FFA617", 200: "rgb(255,166,23,1)" },
-                        pink: { 500: "#F26B6D", 200: "rgb(242,107,109,1)" },
-                    },
-                },
-            },
-        };
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4?plugins=forms,typography,aspect-ratio"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-wardi: #F806CC;
+          --color-purple: #5518fa;
+          --color-deep-purple: #2B1174;
+          --color-green: #C1FF72;
+          --color-orange: #FFA617;
+          --color-pink: #F26B6D;
+        }
+    </style>
+    <script>
         document.addEventListener("readystatechange", () => {
             if (document.readyState === "complete") {
-                    setTimeout(
-                        () => document.querySelector("body").classList.add("loaded"),
-                        2000
-                    );
+                setTimeout(
+                    () => document.querySelector("body").classList.add("loaded"),
+                    2000
+                );
             }
             if (document.readyState === "loaded") {
                 setTimeout(
-                        () => document.querySelector("body").classList.add("loaded"),
-                        2000
-                    );
+                    () => document.querySelector("body").classList.add("loaded"),
+                    2000
+                );
             }
-        });</script><style>.loader-container{width:350px;height:350px;position:relative;perspective:1000px;left:50%;top:50%;transform:translateY(-50%) translateX(-50%);z-index:1001}.loader-container{margin-top:-20px}#loader-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000}#loader-wrapper .loader-section{position:fixed;top:0;width:51%;height:100%;z-index:1000;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}#loader-wrapper .loader-section.section-left{left:0}#loader-wrapper .loader-section.section-right{right:0}.loaded .loader-container{position:relative;top:-100%;z-index:1001;-webkit-transition:all .5s .2s cubic-bezier(.645,.045,.355,1);transition:all .5s .2s cubic-bezier(.645,.045,.355,1)}.loaded #loader-wrapper .loader-section.section-left{-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);transition:all .7s .3s cubic-bezier(.645,.045,.355,1)}.loaded #loader-wrapper .loader-section.section-right{-webkit-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%);-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);transition:all .7s .3s cubic-bezier(.645,.045,.355,1)}.loaded #loader{opacity:0;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}.loaded #loader-wrapper{visibility:hidden;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:all .3s 1s ease-out;transition:all .3s 1s ease-out}</style></head><body class="bg bg-gray-200 dark:bg-black h-full"><div id="loader-wrapper"><div id="loader"></div><div class="loader-section section-left bg-gray-200 dark:bg-black"></div><div class="loader-container bg-gray-200 dark:bg-black"><img class="h-full" src="https://cdn.xyz.dev/loader.svg" alt="XYZ"></div><div class="loader-section section-right bg-gray-200 dark:bg-black"></div></div><main class="h-full"><div><div class="relative py-0 sm:py-6"><div class="absolute inset-x-0 bottom-0 sm:h-full lg:h-1/2"></div><div class="mx-auto max-w-7xl sm:px-6 lg:px-8"><div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl"><div class="absolute inset-0"><img class="h-full w-full object-cover" src="https://source.unsplash.com/collection/559527/2830x1920"><div class="absolute inset-0 bg-purple-400/50 dark:bg-purple-500/90 mix-blend-multiply"></div></div><div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8"><h1 class="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl [text-shadow:_3px_3px_0_var(--tw-shadow-color),_-2px_-2px_0_var(--tw-shadow-color)] text-purple-500 dark:text-purple-500 shadow-purple-500/90 dark:shadow-purple-500"><span class="block text-gray-200">We are creating something amazing.<br>Stay tuned.</span></h1><p class="mx-auto mt-6 max-w-lg text-center text-xl text-purple-200 sm:max-w-3xl"></p><div class="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center"></div></div></div></div></div></div></main><footer><div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 md:flex md:items-center md:justify-center lg:px-8"><div class="mt-6 md:order-1 md:mt-0 mt-auto"><div class="absolute inset-x-0 bottom-10 align-middle grid place-content-center place-items-center text-base text-gray-400 text-center"><a href="https://xyz.ventures"><img class="h-16" src="https://cdn.xyz.dev/assets/xyz/xyz_long_rgb_purple.png" alt="XYZ"></a><div class="text-gray-600 dark:text-gray-400 items-center justify-center text-[8pt] mt-2">© XYZ W.L.L. All rights reserved.</div></div></div></div></footer></body></html>
+        });
+    </script>
+    <style>
+        .loader-container {
+            width: 350px;
+            height: 350px;
+            position: relative;
+            perspective: 1000px;
+            left: 50%;
+            top: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            z-index: 1001
+        }
+
+        .loader-container {
+            margin-top: -20px
+        }
+
+        #loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000
+        }
+
+        #loader-wrapper .loader-section {
+            position: fixed;
+            top: 0;
+            width: 51%;
+            height: 100%;
+            z-index: 1000;
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0)
+        }
+
+        #loader-wrapper .loader-section.section-left {
+            left: 0
+        }
+
+        #loader-wrapper .loader-section.section-right {
+            right: 0
+        }
+
+        .loaded .loader-container {
+            position: relative;
+            top: -100%;
+            z-index: 1001;
+            -webkit-transition: all .5s .2s cubic-bezier(.645, .045, .355, 1);
+            transition: all .5s .2s cubic-bezier(.645, .045, .355, 1)
+        }
+
+        .loaded #loader-wrapper .loader-section.section-left {
+            -webkit-transform: translateX(-100%);
+            -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+            -webkit-transition: all .7s .3s cubic-bezier(.645, .045, .355, 1);
+            transition: all .7s .3s cubic-bezier(.645, .045, .355, 1)
+        }
+
+        .loaded #loader-wrapper .loader-section.section-right {
+            -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+            transform: translateX(100%);
+            -webkit-transition: all .7s .3s cubic-bezier(.645, .045, .355, 1);
+            transition: all .7s .3s cubic-bezier(.645, .045, .355, 1)
+        }
+
+        .loaded #loader {
+            opacity: 0;
+            -webkit-transition: all .3s ease-out;
+            transition: all .3s ease-out
+        }
+
+        .loaded #loader-wrapper {
+            visibility: hidden;
+            -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+            -webkit-transition: all .3s 1s ease-out;
+            transition: all .3s 1s ease-out
+        }
+    </style>
+</head>
+
+<body class="bg bg-gray-200 dark:bg-black h-full">
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left bg-gray-200 dark:bg-black"></div>
+        <div class="loader-container bg-gray-200 dark:bg-black">
+          <svg viewBox="0 0 1450 1450" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" id="Layer_1" style="background: none; shape-rendering: auto;" class="h-full w-full text-black dark:text-white">
+            <g class="ldl-scale" style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.78, 0.78);">
+              <g class="ldl-ani" style="transform-origin: 725px 725px;">
+                <defs>
+                  <style>
+                    .xyz {
+                      fill: currentColor;
+                      stroke-width: 0px;
+                    }
+                  </style>
+                </defs>
+                <g class="ldl-layer"><g class="ldl-ani"><g>
+                  <g class="ldl-layer"><g class="ldl-ani"><g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.162132s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="766.9 104.83 165.33 451.14 149.4 420.46 749.7 74.85 766.9 104.83" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.793651s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="916.92 88.4 165.12 521.27 149.4 490.45 899.65 58.5 916.92 88.4" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.977891s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="199.76 573.17 167.63 573.17 176.89 586.34 165.9 592.67 148.84 560.94 869.67 145.69 887.71 177.14 199.76 573.17" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.162132s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="211.6 635.72 165.9 662.03 149.4 630.37 191 606.42 211.6 635.72" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.133787s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="951.18 209.99 301.02 584.24 293.54 573.17 248.74 573.17 933.35 179.04 951.18 209.99" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.651927s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="247.96 687.42 167.09 733.99 149.4 700.29 226 656.19 247.96 687.42" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.020408s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1010.15 248.6 446.4 573.17 405.2 573.17 380.01 611.4 380.01 611.4 336.37 636.52 315.02 604.94 991.19 215.68 1010.15 248.6" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.722789s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="281.22 734.71 165.54 801.31 149.4 770.28 261.03 706.01 281.22 734.71" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.03458s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1135.74 242.71 561.78 573.17 539.3 586.12 500.54 608.43 525.89 573.17 491.76 573.17 1118.33 212.45 1135.74 242.71" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.119615s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="253.09 780.57 201.16 853.03 201.16 853.03 166.25 873.13 149.4 840.27 253.09 780.57" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.779478s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="571.35 639.9 411.93 731.68 464.15 659.05 552.46 608.2 571.35 639.9" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.680272s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1130.06 318.25 659.38 589.22 649.9 573.17 613.3 573.17 1111.66 286.23 1130.06 318.25" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.694444s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="230.13 905.78 166.25 942.56 149.4 910.2 167.76 899.62 163.35 905.78 230.13 905.78" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.09127s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="357.34 832.54 325.99 850.59 347.23 816.93 357.34 832.54" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.162132s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="602.16 691.6 444.9 782.13 423.64 752.31 583.49 660.28 602.16 691.6" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.992063s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1191.13 352.51 807.84 573.17 786.26 573.17 775.02 592.07 689.99 641.03 671.45 609.64 1172.95 320.91 1191.13 352.51" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.736961s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="388.76 881.1 166.46 1009.11 149.4 976.47 272.19 905.78 291.17 905.78 301.99 888.62 368.75 850.18 388.76 881.1" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.077098s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="631.73 741.21 478.58 829.39 457.13 799.3 612.9 709.63 631.73 741.21" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.637755s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="753.09 628.92 717.84 688.16 700.67 659.1 753.09 628.92" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.048753s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="879.63 598.47 894.6 573.17 849.92 573.17 1324.44 299.99 1342.77 331.8 879.63 598.47" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.048753s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="475.92 905.78 174.53 1079.31 155.64 1046.53 403.48 903.85 404.73 905.78 475.92 905.78" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.751134s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="657.03 783.67 657.03 801.5 516.41 882.47 494.35 851.53 645.58 764.46 657.03 783.67" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.651927s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="931.18 600.04 931.18 643.65 812.41 712.04 851.57 645.88 931.18 600.04" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.162132s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1302.96 429.59 1053.58 573.17 977.85 573.17 1284.08 396.87 1302.96 429.59" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.779478s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="657.03 827.88 657.03 871.47 232.24 1116.03 213.35 1083.31 521.72 905.78 533.02 905.78 529.73 901.17 657.03 827.88" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.190476s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1024.11 660.13 769.16 806.9 769.16 785.09 788.71 752.06 948.4 660.13 1024.11 660.13" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.807823s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1302.96 499.58 1175.13 573.17 1099.43 573.17 1284.08 466.87 1302.96 499.58" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.907029s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="719 905.78 293.94 1150.5 275.06 1117.71 657.03 897.8 657.03 905.78 719 905.78" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.878685s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1078.48 660.13 1012.54 736.78 769.16 876.9 769.16 833.24 1069.85 660.13 1078.48 660.13" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.119615s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1224.35 614.84 1224.35 573.17 1220.88 573.17 1284.08 536.79 1302.96 569.57 1224.35 614.84" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.694444s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="967.67 788.93 926.43 836.88 926.43 854.37 352.77 1184.62 334.73 1153.31 764.71 905.78 769.16 903.21 967.67 788.93" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.048753s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1423.71 568.1 1154.83 722.89 1224.35 642.07 1224.35 641.17 1405.67 536.79 1423.71 568.1" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.162132s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="961.99 905.78 413.36 1221.61 394.54 1188.9 926.43 882.64 926.43 905.78 961.99 905.78" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.651927s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1302.96 709.48 1113.02 818.83 1072.3 818.83 1106.7 778.83 1284.08 676.7 1302.96 709.48" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.793651s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1083.58 905.78 474.86 1256.22 455.97 1223.51 1007.79 905.78 1083.58 905.78" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.03458s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1231.95 820.36 1231.95 818.83 1158.8 818.83 1284.08 746.69 1302.96 779.48 1231.95 820.36" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.190476s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1205.04 905.78 533.54 1292.38 514.66 1259.59 1129.31 905.78 1205.04 905.78" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.03458s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1302.96 849.4 1231.95 890.28 1231.95 846.69 1284.08 816.68 1302.96 849.4" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.105442s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1428.84 843.64 594.41 1324.6 576.72 1293.85 1413.18 812.33 1428.84 843.64" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.680272s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1302.96 989.31 655.7 1362.02 636.81 1329.23 1284.08 956.6 1302.96 989.31" class="xyz"></polygon></g></g>
+                    <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -1.077098s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><polygon points="1294.05 1062.32 722.25 1391.5 704.28 1360.33 1276.15 1031.15 1294.05 1062.32" class="xyz"></polygon></g></g>
+                  </g></g></g>
+                  <g class="ldl-layer"><g class="ldl-ani" style="transform: translate(0px, -10px); transform-origin: 725px 725px; animation: 1.190476s linear -0.977891s infinite forwards wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0;"><path d="m561.78,573.17l-22.48,12.94m235.72,5.95l11.24-18.9h21.58" class="xyz"></path></g></g>
+                </g></g>
+              </g></g>
+            </g>
+            <style id="wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0" data-anikit="">
+                @keyframes wander-v-fe0ac599-1863-42a9-afcb-29031ee9a1b0
+                {
+                  0% {
+                    animation-timing-function: cubic-bezier(0.7806,0.0715,0.8998,0.731);
+                    transform: translate(0,-10px);
+                  }
+                  17.5% {
+                    animation-timing-function: cubic-bezier(0.484,0.3308,0.6853,0.6667);
+                    transform: translate(0,-6.18px);
+                  }
+                  27.6% {
+                    animation-timing-function: cubic-bezier(0.2459,0.3343,0.4923,0.6717);
+                    transform: translate(0,2.48px);
+                  }
+                  35.1% {
+                    animation-timing-function: cubic-bezier(0.1317,0.3401,0.311,0.9176);
+                    transform: translate(0,7.49px);
+                  }
+                  50.1% {
+                    animation-timing-function: cubic-bezier(0.7773,0.0708,0.9008,0.735);
+                    transform: translate(0,10px);
+                  }
+                  67.6% {
+                    animation-timing-function: cubic-bezier(0.4888,0.331,0.6153,0.6674);
+                    transform: translate(0,6.16px);
+                  }
+                  80% {
+                    animation-timing-function: cubic-bezier(0.2539,0.3274,0.5671,0.676);
+                    transform: translate(0,-4.57px);
+                  }
+                  85% {
+                    animation-timing-function: cubic-bezier(0.1302,0.3349,0.3113,0.9183);
+                    transform: translate(0,-7.47px);
+                  }
+                  100% {
+                    transform: translate(0,-10px);
+                  }
+                }</style>
+          </svg>
+        </div>
+        <div class="loader-section section-right bg-gray-200 dark:bg-black"></div>
+    </div>
+    <main class="h-full">
+        <div>
+            <div class="relative py-0 sm:py-6">
+                <div class="absolute inset-x-0 bottom-0 sm:h-full lg:h-1/2"></div>
+                <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
+                        <div class="absolute inset-0"><img id="hero-image" class="h-full w-full object-cover" src="" alt="Background">
+                            <div class="absolute inset-0 bg-purple-400/50 dark:bg-purple-500/90 mix-blend-multiply">
+                            </div>
+                        </div>
+                        <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                            <h1
+                                class="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl
+                                [text-shadow:_0_0_6px_#fff,_0_0_12px_#fff,_0_2px_8px_rgba(120,0,255,0.25),_0_4px_32px_rgba(120,0,255,0.18),_0_1px_0_var(--tw-shadow-color),_2px_2px_0_#000,_-2px_-2px_0_#000]
+                                text-black dark:text-white
+                                dark:[text-shadow:_0_0_6px_#000,_0_0_12px_#000,_0_2px_16px_rgba(0,0,0,0.9),_0_8px_40px_rgba(120,0,255,0.25),_0_1px_0_rgba(0,0,0,0.8),_2px_2px_0_#fff,_-2px_-2px_0_#fff]
+                                shadow-purple-200/90 dark:shadow-black/90">
+                                <span class="block">We are creating something amazing.<br>Stay tuned.</span></h1>
+                            <p class="mx-auto mt-6 max-w-lg text-center text-xl text-purple-200 sm:max-w-3xl"></p>
+                            <div class="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 md:flex md:items-center md:justify-center lg:px-8">
+            <div class="mt-6 md:order-1 md:mt-0 mt-auto">
+                <div
+                    class="absolute inset-x-0 bottom-10 align-middle grid place-content-center place-items-center text-base text-gray-400 text-center">
+                    <a href="https://xyz.ventures"><img class="h-16 dark:invert"
+                            src="https://cdn.xyz.dev/assets/xyz/brand/logo/long/black.png" alt="XYZ"></a>
+                    <div class="text-black dark:text-white items-center justify-center text-[8pt] mt-2">© XYZ W.L.L. All rights
+                        reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Fetch a random Unsplash image with the 'startup' theme
+        const queries = [
+            "abstract geometric background",
+            "abstract geometric pattern",
+            "abstract geometric shapes",
+            "abstract geometric art",
+            "abstract geometric design",
+            "technology",
+            "programming",
+            "coding",
+            "software development",
+            "digital transformation",
+            "business",
+            "startup",
+        ];
+        const query = queries[Math.floor(Math.random() * queries.length)];
+        fetch(`https://img.fn.xyz.dev?query=${query}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('hero-image').src = data.photos[0].src.landscape;
+            })
+            .catch(() => {
+                // fallback image
+                document.getElementById('hero-image').src = "https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg?auto=compress&cs=tinysrgb&w=2400&h=1600"
+            });
+    </script>
+</body>
+
+</html>
